@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import br.com.isaac.verdeshop.databinding.ProdutoListItemBinding
 import br.com.isaac.verdeshop.extension.toCurrency
 import br.com.isaac.verdeshop.model.Produto
+import coil3.load
 
 class ProdutoListAdapter(val context: Context, produtos: List<Produto>) :
     RecyclerView.Adapter<ProdutoListAdapter.ViewHolder>() {
@@ -44,6 +45,7 @@ class ProdutoListAdapter(val context: Context, produtos: List<Produto>) :
                 binding.txNome.text = nome
                 binding.txDescricao.text = descricao
                 binding.txValor.text = valor.toCurrency()
+                binding.vwImagem.load(urlImagem)
             }
         }
 

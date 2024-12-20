@@ -1,7 +1,6 @@
 package br.com.isaac.verdeshop.ui.activity
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import br.com.isaac.verdeshop.dao.ProdutoDao
 import br.com.isaac.verdeshop.databinding.ProdutoListActivityBinding
